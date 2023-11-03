@@ -5,15 +5,15 @@
     "anonymousAuthentication": true,
     "iisExpress": {
       "applicationUrl": "http://localhost:44250",
-      "sslPort": 44326
+      "sslPort": 44300
     }
   },
   "profiles": {
-    "http": {
+    "Calculator": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "launchUrl": "swagger",
+      "launchUrl": "Calculator/sun/1/1",
       "applicationUrl": "http://localhost:5113",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
