@@ -16,7 +16,7 @@ public class CalculatorController : ControllerBase
 
     #region
 
-    [HttpGet("sun/{firstNumber}/{secondNumber}")]
+    [HttpGet("Addition/{firstNumber}/{secondNumber}")]
     public ActionResult Addition(string firstNumber, string secondNumber)
     {
         if (IsNumber(firstNumber) && IsNumber(secondNumber))
@@ -28,7 +28,7 @@ public class CalculatorController : ControllerBase
         return BadRequest("Invalid Input");
     }
    
-    [HttpGet("sun/{firstNumber}/{secondNumber}")]
+    [HttpGet("Subtraction/{firstNumber}/{secondNumber}")]
     public ActionResult Subtraction(string firstNumber, string secondNumber)
     {
         if (IsNumber(firstNumber) && IsNumber(secondNumber))
@@ -39,7 +39,7 @@ public class CalculatorController : ControllerBase
         return BadRequest("Invalid Input");
     }
 
-    [HttpGet("sun/{firstNumber}/{secondNumber}")]
+    [HttpGet("Multiplication/{firstNumber}/{secondNumber}")]
     public ActionResult Multiplication(string firstNumber, string secondNumber)
     {
         if (IsNumber(firstNumber) && IsNumber(secondNumber))
@@ -50,7 +50,7 @@ public class CalculatorController : ControllerBase
         return BadRequest("Invalid Input");
     }
 
-    [HttpGet("sun/{firstNumber}/{secondNumber}")]
+    [HttpGet("Division/{firstNumber}/{secondNumber}")]
     public ActionResult Division(string firstNumber, string secondNumber)
     {
         if (IsNumber(firstNumber) && IsNumber(secondNumber))
@@ -61,7 +61,7 @@ public class CalculatorController : ControllerBase
         return BadRequest("Invalid Input");
     }
 
-    [HttpGet("sun/{firstNumber}")]
+    [HttpGet("SquareRoot/{firstNumber}")]
     public ActionResult SquareRoot(string firstNumber)
     {
         if (IsNumber(firstNumber))
